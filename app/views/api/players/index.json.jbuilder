@@ -1,1 +1,1 @@
-json.array! @players, partial: "players", as: :player
+json.array! @players, partial: "player", as: :player
