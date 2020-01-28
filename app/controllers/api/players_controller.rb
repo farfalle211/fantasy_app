@@ -19,7 +19,8 @@ class Api::PlayersController < ApplicationController
   end
 
   def show
-    @player = Player.where(id: params[:id])
+    # @player = Player.where(id: params[:id])
+    @player = Player.find(params[:id])
     render 'show.json.jbuilder'
   end
 
